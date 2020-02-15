@@ -1,6 +1,7 @@
 @import "bootstrap";
 $icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 
+
 #logo {
 	
 float: left;
@@ -38,6 +39,33 @@ text-decoration: none;
 
 }
 
+#about {
+	
+float: left;
+font-size: 1.2em;
+text-align:center;
+color: #fff;
+letter-spacing: 2px;
+font-weight: bold;
+
+}
+
+#articles:hover {
+	
+color: #fff;
+text-decoration: none;
+
+}
+
+.center {
+	
+text-align: center;
 
 
+}
 
+.form-inline .form-control{
+   position:center;
+   width:400px;
+
+}
