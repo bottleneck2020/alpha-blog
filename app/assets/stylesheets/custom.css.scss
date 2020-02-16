@@ -1,7 +1,6 @@
 @import "bootstrap";
 $icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 
-
 #logo {
 	
 float: left;
@@ -60,12 +59,63 @@ text-decoration: none;
 .center {
 	
 text-align: center;
+}
 
+.jumbotron {
+	
+background:url("guavapp.png") center center;
+background-size:cover;
+margin:40px 0px;
 
 }
+
 
 .form-inline .form-control{
    position:center;
    width:400px;
+
+}
+
+
+.btn-danger {
+	
+ font-size: 2.0em;
+ background-color: transparent;
+}
+
+
+footer {
+	
+margin-top: 45px;
+padding-top: 5px;
+border-top: 1px solid #eaeaea;
+color: #777;
+text: center;
+
+}
+
+footer a:hover {
+	
+color: #222;
+
+}
+
+footer small {
+	
+float: left;
+
+}
+
+footer url {
+	
+float: right;
+list-style: none;
+
+}
+
+footer ul li {
+	
+float: left;
+margin-left: 15px;
 
 }

@@ -7,30 +7,24 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <%= link_to "Articles", articles_path, class:"nav-link", id:"articles" %>
+        <%= link_to "Articles", articles_path, class:"nav-link btn btn-primary", id:"articles" %>
       </li>
       <li class="nav-item active">
-              <%= link_to "About", about_path, class:"nav-link", id:"about" %>
+              <%= link_to "About", about_path, class:"nav-link btn btn-primary", id:"about" %>
       </li>
     </ul>
 
-
 <div class="dropdown show">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Action
+    Dropdown link
   </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <ul>
-    <li><%= link_to "New Article", new_article_path %></li>
-    <li><%= link_to "New Article", new_article_path %></li>
     <a class="dropdown-item" href="#">Action</a>
     <a class="dropdown-item" href="#">Another action</a>
     <a class="dropdown-item" href="#">Something else here</a>
-  </ul>
   </div>
 </div>
-
 
 
 
