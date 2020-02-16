@@ -4,11 +4,12 @@ $icon-font-path: "bootstrap-sass/assets/fonts/bootstrap/";
 #logo {
 	
 float: left;
-font-size: 2.5em;
+font-size: 3.0em;
 color: #fff;
 text-transform: uppercase;
 letter-spacing: -1px;
 font-weight: bold;
+font-family: Ubuntu;
 
 }
 
@@ -23,11 +24,12 @@ text-decoration: none;
 #articles {
 	
 float: left;
-font-size: 1.2em;
+font-size: 1.7em;
 text-align:center;
 color: #fff;
 letter-spacing: 2px;
 font-weight: bold;
+font-family: Ubuntu;
 
 }
 
@@ -41,23 +43,23 @@ text-decoration: none;
 #about {
 	
 float: left;
-font-size: 1.2em;
+font-size: 1.7em;
 text-align:center;
 color: #fff;
 letter-spacing: 2px;
 font-weight: bold;
+font-family: Ubuntu;
+
 
 }
 
 #articles:hover {
-	
 color: #fff;
 text-decoration: none;
 
 }
 
 .center {
-	
 text-align: center;
 }
 
@@ -78,7 +80,7 @@ margin:40px 0px;
 
 
 .btn-danger {
-	
+ font-family: Ubuntu;	
  font-size: 2.0em;
  background-color: transparent;
 }
@@ -87,21 +89,24 @@ margin:40px 0px;
 footer {
 	
 margin-top: 45px;
-padding-top: 5px;
+padding-top:50px;
 border-top: 1px solid #eaeaea;
 color: #777;
-text: center;
+tex-align: center;
+font-family: Ubuntu;
+font-size: 1.5em;
+
 
 }
 
 footer a:hover {
-	
+font-family: Ubuntu;
 color: #222;
+
 
 }
 
 footer small {
-	
 float: left;
 
 }
@@ -114,8 +119,17 @@ list-style: none;
 }
 
 footer ul li {
-	
 float: left;
 margin-left: 15px;
+
+}
+
+.guavapp {
+	
+font-size: 2.8em;
+font-family: ubuntu ;
+background: transparent;
+color: #FF3361;
+
 
 }
