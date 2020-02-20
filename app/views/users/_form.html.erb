@@ -1,11 +1,10 @@
-<br><h1 align="center"> Signup for Guavapp</h1>
-<%= form_with(model: @user, local: true) do |form| %>
-  <% if @user.errors.any? %>
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
       <ul>
-        <% @user.errors.full_messages.each do |message| %>
+        <% user.errors.full_messages.each do |message| %>
           <li><%= message %></li>
         <% end %>
       </ul>
@@ -54,9 +53,13 @@
 
 <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <%= form.submit(@user.new.record? ? "Sign up" : "Update account", class: 'btn btn-primary brn-lg') %>
+
+          <%#= form.submit(@user.new.record? ? "Sign up" : "Update account", class: 'btn btn-primary brn-lg') %>
+          <%= form.submit "Sign up", class: 'btn btn-primary brn-lg' %>
+
         </div>
-<% end %>
+</div>
+<%end %>
   <div class="col-xs-4 col-xs-offset-4", align="center"> 
      <%= link_to "Cancel and return to users list", articles_path %>
   </div>
