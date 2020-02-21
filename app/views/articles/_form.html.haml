@@ -1,0 +1,30 @@
+= form_with(model: article, local: true) do |form|
+  - if article.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(article.errors.count, "error")
+        prohibited this article from being saved:
+      %ul
+        - article.errors.full_messages.each do |message|
+          %li= message
+  .field
+    .col-xs-10
+      .form-group
+        .control-label.col-sm-2
+          = form.label :title
+        .col-sm-12
+          = form.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true
+  .field
+    .col-xs-10
+      .form-group
+        .control-label.col-sm-2
+          = form.label :description
+        .col-sm-12
+          = form.text_area :description, rows:10, class: "form-control", placeholder: "Body of article", autofocus: true
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      = form.submit class: 'btn btn-primary brn-lg'
+  = succeed " " do
+    .col-xs-4.col-xs-offset-4
+  = link_to 'Back', articles_path
+%div

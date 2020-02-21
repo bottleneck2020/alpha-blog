@@ -1,0 +1,7 @@
+%br/
+%h1{:align => "center"} Articles list
+%div{:align => "center"}
+  = will_paginate
+= render 'article', obj: @articles
+%div{:align => "center"}
+  = will_paginate

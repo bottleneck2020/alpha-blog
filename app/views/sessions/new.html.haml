@@ -1,0 +1,23 @@
+%h1{:align => "center"} Login
+= form_with(url: login_path, scope: :session, local: true) do |form|
+  .form-group{:align => "center"}
+    .control-label.col-sm-2
+      = form.label :email
+    .col-sm-4
+      = form.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true
+  .form-group{:align => "center"}
+    .control-label.col-sm-2
+      = form.label :password
+    .col-sm-4
+      = form.password_field :password,class: "form-control", autocomplete: "off"
+  .form-group{:align => "center"}
+    .col-sm-offset-2.col-sm-10
+      = form.submit "Log in", class: 'btn btn-primary brn-lg'
+= succeed " " do
+  .col-xs-4.col-xs-offset-4
+  = link_to 'Back', articles_path
+
+
+  
+
+

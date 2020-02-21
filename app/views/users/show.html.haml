@@ -1,0 +1,9 @@
+%h1{:align => "center"}
+  Welcome to #{@user.username}'s page
+.row
+  .col-md-12.col-md-offset-12.center
+    = gravatar_for @user ,size: 150
+%h4{:align => "center"}
+  = @user.username
+  's articles
+= render 'articles/article', obj: @user.articles

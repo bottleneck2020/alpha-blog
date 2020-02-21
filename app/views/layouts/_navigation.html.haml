@@ -1,0 +1,20 @@
+%nav.navbar.navbar-expand-lg.navbar.navbar-dark.bg-primary
+  = link_to "guavapp", root_path, class:"nav-link btn btn-primary", id:"logo"
+  %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item.active
+        = link_to "Articles", articles_path, class:"nav-link btn btn-primary", id:"articles"
+      %li.nav-item.active
+        = link_to "About", about_path, class:"nav-link btn btn-primary", id:"about"
+      %li.nav-item.active
+        %if.logged_in
+        = link_to "Log out", logout_path, method: :delete, class:"nav-link btn btn-primary", id:"logout"
+        %else
+        = link_to "Login", login_path, class:"nav-link btn btn-primary", id:"login"
+        = link_to "Sign up", signup_path,class:"nav-link btn btn-primary", id:"signup"
+    %end    
+    %form.form-inline.my-2.my-lg-0s
+      %input.form-control.mr-sm-2{"aria-label" => "Search", :placeholder => "Search", :type => "search"}/
+      %button.btn.btn-outline-success.my-2.my-sm-0{:type => "submit"} Search

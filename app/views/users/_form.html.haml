@@ -1,0 +1,47 @@
+= form_with(model: user, local: true) do |form|
+  - if user.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(user.errors.count, "error")
+        prohibited this user from being saved:
+      %ul
+        - user.errors.full_messages.each do |message|
+          %li= message
+  %br
+    .field
+      .col-xs-10
+        .form-group
+          .control-label.col-sm-2
+            = form.label :username
+          .col-sm-12
+            = form.text_field :username, class: "form-control", placeholder: "Enter username", autofocus: true
+    .field
+      .col-xs-10
+        .form-group
+          .control-label.col-sm-2
+            = form.label :email
+          .col-sm-12
+            = form.email_field :email,class: "form-control", placeholder: "Enter email", autofocus: true
+    .field
+      .col-xs-10
+        .form-group
+          .control-label.col-sm-2
+            = form.label :password
+          .col-sm-12
+            = form.password_field :password,class: "form-control", placeholder: "Enter password", autofocus: true
+    .field
+      .col-xs-10
+        .form-group
+          .control-label.col-sm-2
+            = form.label :password_confirmation
+          .col-sm-12
+            = form.password_field :password_confirmation,class: "form-control", placeholder: "Enter password", autofocus: true        
+
+
+    .form-group
+      .col-sm-offset-2.col-sm-10
+        = form.submit "Sign up", class: 'btn btn-primary brn-lg'
+  = succeed " " do
+    .col-xs-4.col-xs-offset-4
+  = link_to 'Back', articles_path
+%div
