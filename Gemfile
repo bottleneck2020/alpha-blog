@@ -32,7 +32,7 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 #HAML
-gem "haml-rails", "~> 2.0"
+gem 'haml-rails', '~> 2.0', '>= 2.0.1'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

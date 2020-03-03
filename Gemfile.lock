@@ -62,7 +62,7 @@ GEM
       execjs
     bcrypt (3.1.13)
     bindex (0.8.1)
-    bootsnap (1.4.5)
+    bootsnap (1.4.6)
       msgpack (~> 1.0)
     bootstrap (4.4.1)
       autoprefixer-rails (>= 9.1.0)
@@ -179,7 +179,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    regexp_parser (1.6.0)
+    regexp_parser (1.7.0)
     ruby_dep (1.5.0)
     ruby_parser (3.14.2)
       sexp_processor (~> 4.9)
@@ -250,7 +250,7 @@ DEPENDENCIES
   bootstrap-will_paginate (~> 1.0)
   byebug
   capybara (>= 2.15)
-  haml-rails (~> 2.0)
+  haml-rails (~> 2.0, >= 2.0.1)
   jbuilder (~> 2.7)
   jquery-rails (~> 4.3, >= 4.3.5)
   listen (>= 3.0.5, < 3.2)
